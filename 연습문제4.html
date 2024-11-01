@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        width: 520px;
+        border: 1px solid #000;
+        padding: 20px 40px;
+        margin: 20px auto;
+      }
+      body {
+        margin: 0;
+      }
+      .detail {
+        margin: 4px 30px;
+      }
+      .detail > label {
+        display: inline-block;
+        width: 60px;
+        margin-left: 10px;
+      }
+      .job {
+        margin: 4px 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>프론트앤드 개발자 지원서</h1>
+      <p>
+        HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.
+      </p>
+      <hr />
+      <form action="#">
+        <h4>개인정보</h4>
+        <div class="detail">
+          <label for="name">이름</label>
+          <input
+            type="text"
+            placeholder="공백없이 입력하세요."
+            id="name"
+            name="name"
+          />
+        </div>
+        <div class="detail">
+          <label for="tel">연락처</label>
+          <input type="tel" id="tel" name="tel" />
+        </div>
+      </form>
+      <form action="">
+        <h4>지원 분야</h4>
+        <div class="job">
+          <input
+            type="radio"
+            name="job"
+            id="webpublishing"
+            value="webpublishing"
+          />
+          <label for="webpublishing">웹퍼블리싱</label>
+        </div>
+        <div class="job">
+          <input type="radio" name="job" id="webfrontend" value="webfrontend" />
+          <label for="webfrontend">웹 프론트앤드</label>
+        </div>
+        <div class="job">
+          <input type="radio" name="job" id="mobileapp" value="mobileapp" />
+          <label for="mobileapp">모바일 앱</label>
+        </div>
+      </form>
+      <form action="#">
+        <h4>지원동기</h4>
+        <textarea
+          name="desc"
+          id=""
+          cols="70"
+          rows="5"
+          placeholder="본사 지원 동기를 간략히 써 주세요."
+        ></textarea>
+        <button type="submit">접수하기</button>
+        <button type="reset">다시쓰기</button>
+      </form>
+    </div>
+  </body>
+</html>
