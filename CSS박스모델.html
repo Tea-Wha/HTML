@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .container {
+        width: 500px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: royalblue;
+        gap: 10px;
+      }
+      .container > .box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        width: 200px;
+        height: 200px;
+        background-color: orange;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #000;
+        border-radius: 10px;
+        box-shadow: 2px -2px 15px 13px violet;
+      }
+      .box2 {
+        display: inline-flex;
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        background-color: cadetblue;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        border-right: 2px solid #000;
+        border-radius: 10px 10px 0px 0px;
+      }
+      /* inline -> 컨텐츠 영역 만큼만 표시 */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p class="box">박스 모델 1</p>
+      <p class="box">박스 모델 2</p>
+    </div>
+    <p class="box2">fff</p>
+    <p class="box2">ff</p>
+    <p class="box2">fff</p>
+  </body>
+</html>
+<!-- Padding -> Contents 크기 외곽으로의 추가적인 공간 (Contents와 동일한 색상 및 속성으로 늘어남) -->
+<!-- Border -> Padding 외곽부터 시작하여 바깥으로 나가는 부분 -->
+<!-- box-sizing: border-box -> border box 기준으로 원하는 사이즈로 설정해주는 방법 -->
+<!-- Margin -> Border 외곽부터 시작하여 여백으로 구성 -->
+<!-- box-sizing: contents-box -> contents box 기준으로 원하는 사이즈 설정 -->
+<!-- 최소환의 것만 margin, padding을 진행해야 한다. -->
+<!-- 수동으로 잡는 것보다는 center / flex 기능 등을 활용 -->
