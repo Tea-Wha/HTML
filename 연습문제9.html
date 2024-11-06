@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      div,
+      span {
+        font-family: "Roboto";
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .box {
+        position: relative;
+        display: flex;
+        width: 304px;
+        height: 390px;
+        margin: 0px auto;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 2px solid black;
+      }
+      .box > .login {
+        position: absolute;
+        display: flex;
+        top: 28px;
+        width: 228px;
+        height: 44px;
+        background-color: blue;
+        align-items: center;
+        justify-content: center;
+      }
+      .box > .login > .login_type {
+        position: absolute;
+        display: inline-flex;
+        width: 228px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+      }
+      .box > .login_id {
+        position: relative;
+        width: 228px;
+        height: 44px;
+        background-color: #eaeaea;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .box > .login_password {
+        position: relative;
+        width: 228px;
+        height: 44px;
+        background-color: #eaeaea;
+      }
+      .box > .login_button {
+        position: relative;
+        width: 228px;
+        height: 44px;
+        background-color: #373f3c;
+        margin-top: 20px;
+      }
+      .box > .login_button > span {
+        color: #ffffff;
+        font-size: 14px;
+      }
+      .bold_font {
+        font-size: 16px;
+        font-weight: bolder;
+        color: #504444;
+        margin-top: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="login">
+        <button type="button" class="login_type">
+          <i class="fa-brands fa-google"></i>Log in with Google
+        </button>
+      </div>
+      <div class="bold_font">or</div>
+      <br />
+      <input
+        class="login_id"
+        type="text"
+        id="id"
+        name="id"
+        placeholder="Username"
+      />
+      <input
+        class="login_password"
+        type="text"
+        name="pw"
+        id="pw"
+        placeholder="Password"
+      />
+      <button class="login_button">
+        <span>LOGIN</span>
+      </button>
+      <br />
+      <span style="color: #2c3432; font-size: 14px">Forgot your password?</span>
+    </div>
+  </body>
+</html>
